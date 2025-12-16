@@ -1,0 +1,6 @@
+@Redis_Begineer_to_Master_HostAddress = http://localhost:5021
+
+GET {{Redis_Begineer_to_Master_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
