@@ -1,0 +1,6 @@
+@Project1.KeyValueStoreAPI_HostAddress = http://localhost:5029
+
+GET {{Project1.KeyValueStoreAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
