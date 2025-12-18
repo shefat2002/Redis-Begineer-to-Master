@@ -1,0 +1,6 @@
+@Project2.LeaderboardAPI_HostAddress = http://localhost:5175
+
+GET {{Project2.LeaderboardAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -46,7 +46,47 @@ dotnet run
 
 **Tech Stack**: .NET 10, StackExchange.Redis 2.8.16, Redis 7
 
-### 🔜 Project 2: Real-Time Leaderboard System (Coming Next)
+### ✅ Project 2: Real-Time Leaderboard System (COMPLETED)
+
+A high-performance gaming leaderboard API using Redis Sorted Sets.
+
+**Status**: ✅ Implemented and documented
+
+**Quick Start**:
+```bash
+cd Project2.LeaderboardAPI
+./run-leaderboard.sh
+# Or manually:
+docker run -d -p 6379:6379 redis:7-alpine
+dotnet run
+```
+
+**Documentation**:
+- 📋 [Quick Summary](PROJECT2-LEADERBOARD-SUMMARY.md) - Overview and architecture
+- 📖 [Implementation Guide](PROJECT2-LEADERBOARD-IMPLEMENTATION.md) - Step-by-step tutorial
+- 📝 [Project README](Project2.LeaderboardAPI/README.md) - API documentation
+- 🧪 [Test Script](Project2.LeaderboardAPI/test-api.sh) - Automated testing
+- 📊 [Performance Tests](Project2.TestConsole/Program.cs) - Load testing tool
+
+**What You'll Learn**:
+- Redis Sorted Sets (ZADD, ZRANGE, ZRANK, ZSCORE)
+- Redis Hashes for metadata
+- Atomic transactions (MULTI/EXEC)
+- Ranking algorithms
+- Performance optimization
+- Load testing techniques
+
+**Features**:
+- Submit player scores with automatic ranking
+- Get top N players (O(log N + N) complexity)
+- Real-time rank calculation (O(log N) lookup)
+- Player statistics tracking
+- Range queries for leaderboard pagination
+- Performance testing with 10,000+ operations
+
+**Tech Stack**: .NET 10, StackExchange.Redis 2.8.16, Redis 7 Sorted Sets & Hashes
+
+### 🔜 Project 3: E-Commerce Caching (Coming Next)
 
 Gaming leaderboard with Sorted Sets - See REDIS-LEARNING-PLAN.md
 
